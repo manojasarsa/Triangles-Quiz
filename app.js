@@ -8,13 +8,21 @@ function calculateSumOfAngles(a1,a2,a3) {
 }
 
 function isTriangle() {
-    const sumOfAngles = calculateSumOfAngles(Number(inputs[0].value), Number(inputs[1].value), Number(inputs[2].value));
-
-    if ( sumOfAngles === 180) {
-        outputEl.innerText = "Yay! The angles form a triangle.";
+    if ((Number(inputs[0].value))>0 && (Number(inputs[1].value))>0 && (Number(inputs[2].value))>0){
+        const sumOfAngles = calculateSumOfAngles(Number(inputs[0].value), Number(inputs[1].value), Number(inputs[2].value));
+    
+        if ( sumOfAngles === 180) {
+            outputEl.innerText = "Yay! The angles form a triangle.";
+        }
+        else {
+            outputEl.innerText = "Oops! The angles don't form a triangle."
+        }
     }
-    else {
-        outputEl.innerText = "Oops! The angles don't form a triangle."
+    else if((Number(inputs[0].value))<0 || (Number(inputs[1].value))<0 || (Number(inputs[2].value))<0){
+        outputEl.innerText = "Please enter positive values."
+    }
+    else{ 
+        outputEl.innerText = "Please enter all three values."
     }
 }
 

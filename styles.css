@@ -1,41 +1,60 @@
-body{
+body {
     background-color: lightblue;
+    background-image: url("images/triangle.jpg");
 }
 
-h1{
+h1 {
     text-align: center;
     padding: 1rem;
     padding-left: 3rem;
 }
+
 .container {
     text-align: center;
-    padding-bottom: 1rem;
-   
+    padding-bottom: 2rem;
+
 }
 
-label{
+label {
     display: block;
-    padding: 1rem;
+    padding: 2rem;
+    font-weight: bolder;
+    font-size: larger;
 }
 
-button{
+button {
     display: block;
-    margin : auto;
-    margin-top: 1rem;;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0.5rem 0.7rem;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(37, 121, 121);
+}
+button:hover{
+    background-color: black;
+    color: white;
+    
 }
 
 #outputEl {
-    padding: 1rem;
+    padding: 2rem;
+    font-size: x-large;
+    font-weight: bolder;
 }
 
-nav{
-    background-color: white;
+nav {
+    background-color: rgb(149, 158, 158);
     color: black;
-    padding : 1rem;
+    font-weight: bolder;
+    padding: 1rem;
     margin: 0rem;
 }
 
-nav a{
-    color: lightseagreen;
+nav a {
+    color: rgb(30, 32, 39);
     padding-left: 2rem;
+    text-decoration: none;
 }
+
+
