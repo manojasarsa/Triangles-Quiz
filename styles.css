@@ -41,6 +41,7 @@ button:hover{
     padding: 2rem;
     font-size: x-large;
     font-weight: bolder;
+    text-align: center;
 }
 
 nav {
@@ -57,4 +58,32 @@ nav a {
     text-decoration: none;
 }
 
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+    display: inline;
+}
 
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    display: inline;
+}
+
+.link {
+    color: rgb(84, 86, 95);
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+.link:hover{
+    color: black;
+}
+.footer-para{
+    padding: 1rem;
+}
+li {
+    display: inline;
+}
